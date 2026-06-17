@@ -4,6 +4,7 @@ AllCops:
   NewCops: disable
   Exclude:
     - lib/generators/apple_auth/apple_auth_controller/templates/**
+  NewCops: disable
 
 Style/Documentation:
   Enabled: false
@@ -12,6 +13,10 @@ Layout/SpaceBeforeFirstArg:
   Exclude:
 
 Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+
+Lint/ConstantDefinitionInBlock:
   Exclude:
     - spec/**/*
 
